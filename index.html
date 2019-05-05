@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Favorite fruit start</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form novalidate>
+    <div class="row"> 
+      <label for="email">Email:</label>
+      <div>
+        <input id="email" name="email" type="email">
+        <span class="error" aria-live="polite"></span>
+      </div>
+    </div>
+      
+    <div class="row">
+      <label for="confirm-email">Confirm email:</label>
+      <div>
+        <input id="confirm-email" name="confirm-email" type="email">
+        <span class="error" aria-live="polite"></span>
+      </div>
+    </div>
+    
+    <div class="row">
+      <label for="country">Country:</label>
+      <div>
+        <input id="country" name="country" type="text" minlength="3">
+        <span class="error" aria-live="polite"></span>
+      </div>
+    </div>
+    
+    <div class="row">
+      <label for="zip">Zip code:</label>
+      <div>
+        <input id="zip" name="zip" type="number" max="9999" min="1111">
+        <span class="error" aria-live="polite"></span>
+      </div>
+    </div>
+    
+    <div class="row">
+      <label for="password">Password:</label>
+      <div>
+        <input id="password" name="password" type="password" minlength="6" maxlength="15">
+        <span class="error" aria-live="polite"></span>
+      </div>
+    </div>
+    
+    <div class="row">
+      <label for="confirm-password">Confirm password:</label>
+      <div>
+        <input id="confirm-password" name="confirm-password" type="password" minlength="6" maxlength="15">
+        <span class="error" aria-live="polite"></span>
+      </div>
+    </div>
+    
+    <button type="submit">Submit</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
